@@ -1,0 +1,81 @@
+html,
+body,
+#scatter {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Loader */
+.centered {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  color:darkred; */
+}
+.spinner-border {
+  width: 4rem!important;
+  height: 4rem!important;
+}
+.loaderWrapper{
+  width: 100%; 
+  height: 100%; 
+  /* background-color: green; */
+  background-color:rgba(229, 240, 236, 0.164);
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 999;
+}
+
+
+
+
+
+
+
+
+.tau-chart__legend__guide--color.color-a,
+.color-a {
+  fill: #ff0000;
+  background-color: #ff0000;
+}
+
+.tau-chart__legend__guide--color.color-b,
+.color-b {
+  fill: #ffae00;
+  background-color:#ffae00;
+}
+
+.tau-chart__legend__guide--color.color-c,
+.color-c {
+  fill: #6fff00;
+  background-color:#6fff00;
+}
+
+
+
+#scatter>svg {
+  display: block;
+}
+.tau-chart__legend__guide--color.color-a,
+.color-a {
+fill: A;
+background-color: A;
+}
+
+.tau-chart__legend__guide--color.color-b,
+.color-b {
+fill: #ffae00;
+background-color:#ffae00;
+}
+
+.tau-chart__legend__guide--color.color-c,
+.color-c {
+fill: #6fff00;
+background-color:#6fff00;
+}

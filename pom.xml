@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.10.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>tspkelvin</artifactId>
+	<!-- <version>0.0.1-SNAPSHOT</version> -->
+	<packaging>war</packaging>
+	<name>tspkelvin</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- <exclusions> <exclusion> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
+				</exclusion> </exclusions> -->
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
+			</dependency> -->
+
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+		<!-- <dependency> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
+			<scope>provided</scope> </dependency> <dependency> <groupId>ch.qos.logback</groupId> 
+			<artifactId>logback-core</artifactId> <scope>provided</scope> </dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sap.cloud/neo-java-web-sdk -->
+		<!-- <dependency> <groupId>com.sap.cloud</groupId> <artifactId>neo-java-web-sdk</artifactId> 
+			<version>3.100.16</version> <type>pom</type> </dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.17</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.monitorjbl/xlsx-streamer -->
+		<dependency>
+			<groupId>com.monitorjbl</groupId>
+			<artifactId>xlsx-streamer</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.googlecode.json-simple</groupId> <artifactId>json-simple</artifactId> 
+			<version>1.1</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<!-- Jackson JSON Processor -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.zaxxer</groupId>
+					<artifactId>HikariCP</artifactId>
+				</exclusion>
+			</exclusions>
+			<!-- <exclusions> <exclusion> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
+				</exclusion> </exclusions> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sap.cloud.db.jdbc/ngdbc -->
+		<!-- <dependency> <groupId>com.sap.cloud.db.jdbc</groupId> <artifactId>ngdbc</artifactId> 
+			<version>2.4.70</version> </dependency> -->
+
+		<!-- JSTL tag lib -->
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+
+		<!-- Tomcat for JSP rendering -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- send email -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+
+</project>

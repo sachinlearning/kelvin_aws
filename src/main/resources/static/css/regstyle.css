@@ -1,0 +1,269 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-image: url("/resources/img/bluebg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+} 
+.form_bg {
+   
+    color:#666;
+    padding:20px;
+	padding-top:1.0rem!important;
+   
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #e2e2e2!important;
+    background-clip: border-box;
+  
+    border-radius: 1.15rem!important;
+}
+.card-radius{
+	
+	border:none!mportant;
+}
+.m-t-15{
+	margin-top:10px;
+}
+.m-t-30{
+	margin-top:30px;
+}
+.m-b-8{
+	margin-bottom: 8px;
+}
+.userTxt {
+    position: absolute!important;
+    bottom: -5px;
+	left:-30px;
+	font-size:14px;
+}
+.boder{
+	border:2px solid #a6a6a66e!important;
+	background:#fff;
+}
+.txtcolr{
+	color: #6f6c6c;
+    font-size: 18px;
+    font-weight: bold;
+	user-select: none;
+}
+.submitBtn {
+    padding: 4px 22px;
+    border-radius: .65rem!important;
+	
+    background-color: #fff;
+    border: 2px solid #a6a6a6c7!important;
+    font-weight: 600;
+    color: #040101f2;
+}
+.linkC{
+    color: #6f6c6c!important;
+    font-weight: bold!important;
+    font-size: 14px!important;
+    font-style: normal;
+}
+.tsptitle{
+    font-style: normal;
+    font-size: 40px;
+    font-family: arial;
+    color: #6f6666;
+	background:#fff;
+	padding-left: 10px;
+	user-select:none;
+}
+.tsptitle span{
+	font-style: italic;
+}
+.login-form {
+    padding-top: 0!important;
+    
+}
+.loginwlcTitle{
+	position: relative;
+    user-select:none;
+    margin: 0 auto;
+    text-align: center;
+    top: 34%;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+}
+.form-group label{
+	font-size: 14px;
+    /* width: 119px; */
+    
+    display: block;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.centerdiv{
+position: relative;  top: 50%;  transform: translateY(9%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  /* Styles */
+  
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
+  /*body{
+    border:2px solid blue;
+  }
+  .text-md-left{
+    left: -32px;
+  }
+  .text-md-right{
+    right: 19px;
+  }
+  .loginwlcTitle {
+    
+    
+    top: calc(50% - 105px);
+    
+}
+}*/
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+  body{
+      border:2px solid red;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 - 5s ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media
+only screen and (max-device-width: 667px) 
+only screen and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media
+only screen and (min-device-width : 414px) 
+only screen and (-webkit-device-pixel-ratio: 3) {
+  /*** You've spent way too much on a phone ***/
+}
+
+/* Samsung Galaxy S7 Edge ----------- */
+@media only screen
+and (-webkit-min-device-pixel-ratio: 3),
+and (min-resolution: 192dpi)and (max-width:640px) {
+ /* Styles */
+
+}
